@@ -30,9 +30,9 @@ const parqueIcon = new L.Icon({
 function OcupacaoChart({ parque }) {
   const data = parque.dados;
   return (
-    <div style={{ width: "100%", height: 200, marginBottom: 30 }}>
-      <h4>{parque.nome}</h4>
-      <ResponsiveContainer>
+    <div style={{ width: "100vw", maxWidth: "100%", height: 300, marginBottom: 30 }}>
+      <h4 style={{ textAlign: "center" }}>{parque.nome}</h4>
+      <ResponsiveContainer width="100%" height={250}>
         <LineChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="tempo" />
@@ -49,7 +49,7 @@ function OcupacaoChart({ parque }) {
 
 function MapaCamaras() {
   return (
-    <MapContainer center={[40.633, -8.659]} zoom={15} style={{ height: "400px", width: "100%", marginBottom: 30 }}>
+    <MapContainer center={[40.633, -8.659]} zoom={15} style={{ height: "80vh", width: "100vw", marginBottom: 30 }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
@@ -88,12 +88,18 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>SmartParkNet Dashboard</h1>
+    <div style={{ padding: 0, margin: 0, width: "100vw", overflowX: "hidden" }}>
+      <h1 style={{ textAlign: "center", padding: "20px 0" }}>SmartParkNet </h1>
+
+      {/* Mapa ocupa toda a largura */}
       <MapaCamaras />
-      {parques.map((camara, idx) => (
-        <OcupacaoChart key={idx} parque={{ nome: camara.camara, dados: camara.dados }} />
-      ))}
+
+      {/* Gráficos ocupam toda a largura */}
+      <div style={{ width: "100vw", padding: "0 10px" }}>
+        {parques.map((camara, idx) => (
+          <OcupacaoChart key={idx} parque={{ nome: camara.camara, dados: camara.dados }} />
+        ))}
+      </div>
     </div>
   );
 }
