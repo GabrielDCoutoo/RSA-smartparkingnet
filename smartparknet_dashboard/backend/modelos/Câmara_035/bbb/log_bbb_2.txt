@@ -1,0 +1,115 @@
+2025-06-05 12:33:22.926057: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-06-05 12:33:22.926479: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-06-05 12:33:22.928823: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-06-05 12:33:22.935096: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1749123202.946065  116666 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1749123202.949257  116666 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1749123202.958227  116666 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1749123202.958262  116666 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1749123202.958265  116666 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1749123202.958266  116666 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-06-05 12:33:22.960955: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py:776: RuntimeWarning: All-NaN slice encountered
+  return xp.asarray(numpy.nanmin(X, axis=axis))
+/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py:793: RuntimeWarning: All-NaN slice encountered
+  return xp.asarray(numpy.nanmax(X, axis=axis))
+E0000 00:00:1749123204.429826  116666 cuda_executor.cc:1228] INTERNAL: CUDA Runtime error: Failed call to cudaGetRuntimeVersion: Error loading CUDA libraries. GPU will not be used.: Error loading CUDA libraries. GPU will not be used.
+W0000 00:00:1749123204.430205  116666 gpu_device.cc:2341] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/keras/src/layers/rnn/rnn.py:199: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+📁 A carregar dados de smartparknet_dashboard/backend/forecast_b/bbb/dados_Câmara_035_bbb_2.csv...
+🔍 A preparar treino para entityId 0...
+⏩ Ignorado (apenas 161 pontos)
+🔍 A preparar treino para entityId 0058...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0059...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0060...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0062...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0065...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0066...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0067...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0068...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0069...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0073...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0078...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0079...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0080...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0082...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0085...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0086...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0089...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0091...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 0092...
+⏩ Ignorado (apenas 2 pontos)
+🔍 A preparar treino para entityId 1...
+⏩ Ignorado (apenas 185 pontos)
+🔍 A preparar treino para entityId 10...
+🚀 A treinar modelo LSTM...
+Epoch 1/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m36s[0m 804ms/step - accuracy: 0.0000e+00 - loss: nan[1m28/46[0m [32m━━━━━━━━━━━━[0m[37m━━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan   [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 6ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 2/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - accuracy: 0.0000e+00 - loss: nan[1m31/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 3/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 14ms/step - accuracy: 0.0000e+00 - loss: nan[1m30/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 4/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - accuracy: 0.0000e+00 - loss: nan[1m30/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 5/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - accuracy: 0.0000e+00 - loss: nan[1m24/46[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m45/46[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan[1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 4ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 6/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 19ms/step - accuracy: 0.0000e+00 - loss: nan[1m21/46[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 7/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - accuracy: 0.0000e+00 - loss: nan[1m31/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 8/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 15ms/step - accuracy: 0.0000e+00 - loss: nan[1m31/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 9/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 18ms/step - accuracy: 0.0000e+00 - loss: nan[1m31/46[0m [32m━━━━━━━━━━━━━[0m[37m━━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+Epoch 10/10
+[1m 1/46[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m0s[0m 16ms/step - accuracy: 0.0000e+00 - loss: nan[1m34/46[0m [32m━━━━━━━━━━━━━━[0m[37m━━━━━━[0m [1m0s[0m 2ms/step - accuracy: 0.0000e+00 - loss: nan [1m46/46[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 3ms/step - accuracy: 0.0000e+00 - loss: nan - val_accuracy: 0.0000e+00 - val_loss: nan
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+💾 Modelo guardado em smartparknet_dashboard/backend/modelos/Câmara_035/bbb/10/modelo_bbb_2.h5
+🧪 A avaliar modelo...
+[1m 1/15[0m [32m━[0m[37m━━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 82ms/step[1m15/15[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 5ms/step [1m15/15[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 6ms/step
+/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/_array_api.py:399: RuntimeWarning: invalid value encountered in cast
+  return x.astype(dtype, copy=copy, casting=casting)
+Traceback (most recent call last):
+  File "/home/gabriel-couto/Desktop/RSA/train_LSTM.py", line 118, in <module>
+    main()
+  File "/home/gabriel-couto/Desktop/RSA/train_LSTM.py", line 111, in main
+    report = classification_report(y_test, y_pred, zero_division=0)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 2671, in classification_report
+    y_type, y_true, y_pred = _check_targets(y_true, y_pred)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 99, in _check_targets
+    type_true = type_of_target(y_true, input_name="y_true")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/multiclass.py", line 417, in type_of_target
+    _assert_all_finite(data, input_name=input_name)
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 120, in _assert_all_finite
+    _assert_all_finite_element_wise(
+  File "/home/gabriel-couto/Desktop/RSA/venv/lib/python3.12/site-packages/sklearn/utils/validation.py", line 169, in _assert_all_finite_element_wise
+    raise ValueError(msg_err)
+ValueError: Input y_true contains NaN.
