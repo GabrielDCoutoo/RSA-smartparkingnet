@@ -1,8 +1,41 @@
+# Node.js e frontend
 node_modules/
 dist/
+build/
+
+# Ambiente virtual Python
+venv/
+.VENV/
+env/
+ENV/
+
+# Configuração pessoal e IDEs
 .env
 .DS_Store
 .vscode/
-build/
-Fev-Apr-smarparking.csv
+.idea/
+
+# Ficheiros Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dados de treino e históricos
+*.csv
+*.h5
+*.json
+
+# Outputs de treino e resultados
+histories/
+output/
+results/
+
+# Ficheiros de logs
+*.log
+
+# Checkpoints Jupyter (caso uses notebooks)
+.ipynb_checkpoints/
+
+# Ficheiros específicos que já tinhas
 Fev-Apr-smarparking.csv
